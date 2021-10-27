@@ -22,7 +22,9 @@ class IpsCustomTinkerwellDriver extends TinkerwellDriver
 		return array_merge(parent::contextMenu(), [
 			Separator::create(),
 			Label::create('IPS4'),
-			OpenURL::create('Documentation', 'https://invisioncommunity.com'),
+			OpenURL::create('Community', 'https://invisioncommunity.com'),
+			OpenURL::create('Documentation', 'https://invisioncommunity.com/4guides/welcome/about-invision-community-r7/'),
+			OpenURL::create('Dev Docs', 'https://invisioncommunity.com/developers/'),
 			OpenURL::create('Local Dev Site', \IPS\Settings::i()->base_url),
 		]);
 	}
